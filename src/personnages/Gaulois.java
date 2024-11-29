@@ -28,18 +28,33 @@ public class Gaulois {
 		romain.recevoirCoup(force / 3);
 	}
 
-	@Override
-	public String toString() {
-		return "Gaulois [nom=" + nom + ", force=" + force + ", effetPotion=" + effetPotion + "]";
-	}
-
-	public Gaulois(String nom, int force, int effetPotion) {
-		this.nom = nom;
-		this.force = force;
-		this.effetPotion = effetPotion;
-	}
-
+	/*
+	 * @Override public String toString() { return "Gaulois [nom=" + nom +
+	 * ", force=" + force + ", effetPotion=" + effetPotion + "]"; }
+	 * 
+	 * public Gaulois(String nom, int force, int effetPotion) { this.nom = nom;
+	 * this.force = force; this.effetPotion = effetPotion; }
+	 * 
+	 * public static void main(String[] args) {
+	 * 
+	 * }
+	 */
+	
+	/*Conclusion : La méthode toString permet de transformer l’achage de l’objet sous
+	sa forme nomDuPaquage.nomDeLaCLasse@adresseMemoire en chaine de
+	caractère correspondant à l’état de l’objet.*/
+	
 	public static void main(String[] args) {
+		Gaulois asterix = new Gaulois("Astérix", 8);
+		System.out.println(asterix); // ca cest la conclusion
+		
+		 // Tester prendreParole
+		    System.out.println(asterix.prendreParole()); // Le gaulois Astérix :
+
+		 // Tester parler
+		    asterix.parler("Salam ailekoum !");
+
+		
 
 	}
 

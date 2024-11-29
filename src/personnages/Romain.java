@@ -1,5 +1,7 @@
 package personnages;
 
+import personnages.Gaulois;
+
 public class Romain {
 	private String nom; // attribut privee accessible depuis la classe seulement  
 	private int force ;
@@ -28,5 +30,12 @@ public class Romain {
     	}else {
     		parler("j'abandonne...");
     	}
+    }
+    public static void main(String[] args) {
+    	 Romain minus = new Romain("Minus", 6);
+    	 System.out.println(minus);
+
+    	 
+    	    
     }
 }
