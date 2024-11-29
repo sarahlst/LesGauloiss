@@ -4,6 +4,11 @@ public class Gaulois {
 	private String nom; // attribut privee accessible uniquement dans la classe
 	private int force; // meme chose
 	private int effetPotion = 1; // meme chose mais initialise a une valeur entiere =1
+	
+	public void boirePotion(int forcePotion) {
+	    this.effetPotion = forcePotion; // Met à jour l'effet de la potion
+	    parler("Merci Druide, je sens que ma force est " + forcePotion + " fois décuplée.");
+	}
 
 	public Gaulois(String nom, int force) { // methode publique qu'on peut acceder de n'impote qu'elle classe
 		this.nom = nom;
@@ -24,7 +29,7 @@ public class Gaulois {
 	}
 
 	public void frapper(Romain romain) {
-		System.out.println(nom + "envoie un grand coup dans la machoire de " + romain.getNom());
+		System.out.println(nom + " envoie un grand coup dans la machoire de " + romain.getNom());
 		romain.recevoirCoup(force / 3);
 	}
 
