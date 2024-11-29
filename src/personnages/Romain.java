@@ -1,7 +1,7 @@
 package personnages;
 
 public class Romain {
-	private String nom; // attribut prive 
+	private String nom; // attribut privee accessible depuis la classe seulement  
 	private int force ;
 	
 	public Romain(String nom, int force) {
